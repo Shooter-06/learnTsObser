@@ -1,11 +1,4 @@
 
- why is this function getting ingored and not being able to delete the localSiteValues and the new values added by AddEditSiteComponent html into our
- table deleteSite(id: number) {
-        this.siteService.deleteData(id).subscribe(() =>{
-			this.loadSite();
-		});
-		console.log('here');
-    }
 
 @Component({
     selector: 'app-site',
@@ -92,12 +85,7 @@ export class SiteComponent implements OnInit, OnDestroy {
 </div>
 
 
-// this is the form component 
-import { Component, OnInit, Output } from '@angular/core';
-import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
-import { PortalSite } from 'main/app/admin-component/models/portal-site.model';
-import { SiteServiceService } from 'main/app/admin-component/services/site-service.service';
+// this is the form component  
 
 export interface DropValues {
     id: number;
